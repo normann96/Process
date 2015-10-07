@@ -18,7 +18,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	/*ZeroMemory(&si, sizeof(STARTUPINFO));
 	si.cb = sizeof(STARTUPINFO);*/
 
-	// создаем новый консольный процесс
 	if (!CreateProcess(NULL, "Notepad.exe", NULL, NULL, FALSE, NULL, NULL, NULL, &si, &pi))
 	{
 		cout << "The new process is not created.\n";
